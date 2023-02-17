@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+/* font-family: 'Arvo', serif; titulos
+font-family: 'Anton', sans-serif; subtitulos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principio {
+    background-color: rgb(250, 233, 135);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.principio img{
+    
+    width: 150px;
+    height: 130px;
+    border-radius: 15%;
+}
+
+.principio h1 {
+    font-family: 'Arvo', serif;
+    font-size: 70px;
+    align-self: flex-start;
+}
+
+.principio p {
+    align-self: flex-end;
+    font-family:'Anton', sans-serif; 
+    font-size: 20px;
+}
+
+.navbar {
+    background-color:rgb(250, 233, 135) ;
+    width: 100%;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    background-color: rgb(250, 143, 135) ;
+    border-radius: 15%;
+}
+
+/* main primario */
+
+.main-primario {
+    background-color: rgb(135, 213, 250) ;
+    display: grid;
+    width: 100%;
+    height: 200vh;
+    grid-template-columns: 200px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "seguinos novedades novedades novedades"
+    "seguinos hombres hombres hombres"
+    "seguinos mujeres mujeres mujeres"
+    ;
+    gap: 30px 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.novedades {
+    grid-area: novedades ;
+    background-color: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+.cards-container-title h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-container img {
+    width: 220px;
+    height: 210px;
+    border-radius: 15%;
+    margin: 10px;
+}
+.card-container p {
+    text-align: center;
+}
+.card-container a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.hombres {
+    grid-area: hombres;
+    background-color: rgb(240, 169, 128);
+}
+
+.mujeres {
+    grid-area: mujeres ;
+    background-color: rgb(240, 128, 240);
+}
+
+.seguinos {
+    grid-area: seguinos ;
+    background-color: rgb(128, 240, 165);
+    font-size: 20px;
+    font-family:'Anton', sans-serif; 
+}
+
+.seguinos img {
+    width: 40px;
+    height: 40px;
+}
+
+.pie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: coral;
+    gap: 30px;
+    padding: 10px;
+}
+
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.nosotros h2 {
+    padding: 5px;
+
+}
+
+.nosotros h3 {
+    text-align: center;
+
+}
+
+.nosotros h4 {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family:'Roboto', sans-serif;
+}
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.redes h2 {
+    padding: 5px;
+
+}
+
+.redes a {
+    color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.pago {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pago h2{
+    padding: 5px;
+
+}
+
+.pago a{
+    color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+/* login main/footer */
+
+.login-container {
+    background-color: pink;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+
+.login-title-container {
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;   
+    align-items: center;
+}
+
+.login-title {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+
+} 
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.buttom-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.buttom {
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* hombres/mujeres */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas:
+    "header header header header"
+    "main main main main" 
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+    ;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color:rgb(250, 233, 135) ;
+    grid-area: header;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+}
+
+footer {
+    background-color: coral;
+    grid-area: footer;
+}
+
+/* contactos */
+
+
+.contactos {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 20px;
+}
+
+.whatsapp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.whatsapp img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+
+}
+
+.whatsapp p {
+    font-size: 40px;
+    font-weight: 300;
+
+}
+
+.facebook {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.facebook img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.facebook p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.instagram img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.instagram p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.mail {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.mail img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.mail p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+@media (max-width:766px) {
+    .principio {
+        background-color: blue;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+    }
+    .principio img {
+        width: 100px;
+        height: 90px;
+    }
+    .principio h1 {
+        font-size: 30px;
+        color: white;
+    }
+    .principio p {
+        color: white;
+        font-size: 18px;
+    }
+    .navbar {
+        background-color: blue;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .navbar li a {
+        color: white;
+        font-size: 15px;
+        padding: 8px;
+    }
+    .main-primario {
+        background-color: black;
+        display: grid;
+        width: auto;
+        height: 600vh;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        "seguinos novedades"
+        "seguinos novedades"
+        "seguinos hombres"
+        "seguinos hombres"
+        "mujeres mujeres"
+        ;
+    }
+    .card-container{
+        
+        justify-items: flex-start;
+    }
+    .seguinos {
+        font-size: 30px;
+    }
+
+    /* login */
+
+    @media (max-width:363px){
+        .principio{
+            width: auto;
+            background-color: rgb(153, 0, 255);
+        }
+    }
+
+}
+
+
