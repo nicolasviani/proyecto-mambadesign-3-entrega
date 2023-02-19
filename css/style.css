@@ -412,14 +412,14 @@ footer {
     font-weight: 300;
 }
 
-@media (max-width:766px) {
+/* MEDIA QUERIES INDEX.HTML */
+
+@media (max-width:768px) {
     .principio {
         background-color: blue;
         width: auto;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: start;
         align-items: start;
     }
     .principio img {
@@ -448,9 +448,9 @@ footer {
         background-color: black;
         display: grid;
         width: auto;
-        height: 600vh;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(5,1fr);
+        height: auto;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,auto);
         grid-template-areas: 
         "seguinos novedades"
         "seguinos novedades"
@@ -459,23 +459,213 @@ footer {
         "mujeres mujeres"
         ;
     }
+    .cards-container-title h2 {
+        font-size: 35px;
+    }
+    .cards-container img {
+        width: 150px;
+        height: 130px;
+    }
+    .pie {
+        width: 100%;
+        height: auto;
+        background-color: coral;
+    }
     .card-container{
-        
         justify-items: flex-start;
     }
     .seguinos {
-        font-size: 30px;
+        font-size: 20px;
     }
+}
 
-    /* login */
-
-    @media (max-width:363px){
+    @media (max-width:372px){
         .principio{
             width: auto;
             background-color: rgb(153, 0, 255);
         }
+        .main-primario {
+            background-color: black;
+            display: grid;
+            width: 100%;
+            height: auto;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(4,auto);
+            grid-template-areas: 
+            "seguinos"
+            "novedades"
+            "hombres"
+            "mujeres"
+            ;
+        }
+    }
+    
+    /* MEDIA QUERIES DE LOGIN.HTML */
+
+
+    @media (max-width:768px) {
+        .principio {
+            background-color: blue;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .principio img {
+            width: 100px;
+            height: 90px;
+        }
+        .principio h1 {
+            font-size: 30px;
+            color: white;
+        }
+        .principio p {
+            color: white;
+            font-size: 18px;
+        }
+        .navbar {
+            background-color: blue;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navbar li a {
+            color: white;
+            font-size: 15px;
+            padding: 8px;
+        }
+        .login-container {
+            display: flex;
+            background-color: lightpink;
+        }
+        .login-title {
+            font-size: 40px;
+        }
+        .login-subtitle {
+            font-size: 20px;
+        }
+        .input-container {
+            font-size: 20px;
+        }
+        .buttom {
+        background-color: lightgreen;
+        }
+        .pie {
+            width: 100%;
+            height: auto;
+            background-color: coral;
+        }
+        .card-container{
+            justify-items: flex-start;
+        }
+        .seguinos {
+            font-size: 20px;
+        }
     }
 
-}
+    /* MEDIA QUERIES DE HOMBRES/MUJERES */
+
+    @media (max-width: 768px) {
+        .principio {
+            background-color: blue;
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .principio img {
+            width: 100px;
+            height: 90px;
+        }
+        .principio h1 {
+            font-size: 30px;
+            color: white;
+        }
+        .principio p {
+            color: white;
+            font-size: 18px;
+        }
+        .navbar {
+            background-color: blue;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .navbar li a {
+            color: white;
+            font-size: 15px;
+            padding: 8px;
+        }
+        .hero {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            grid-template-rows: repeat(6,auto);
+            grid-template-areas: 
+            "header header"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "footer footer"
+            ;
+        }
+        header {
+            grid-area: header;
+            background-color: lightblue;
+        }
+        main {
+            grid-area: main;
+            background-color: white;
+        }
+        footer {
+            grid-area: footer;
+            background-color: lightcoral;
+        }
+    }
+
+    /* MEDIA QUERIES CONTACTOS */
+
+    @media (max-width: 768px) {
+        .contactos {
+            background-color: lightpink;
+            justify-content: center;
+        }
+        .whatsapp img {
+            width: 70px;
+            height: 70px;
+        }
+        .whatsapp p {
+            font-size: 25px;
+            font-weight: 100;
+        }
+        .facebook img {
+            width: 70px;
+            height: 70px;
+        }
+        .facebook p {
+            font-size: 25px;
+            font-weight: 100;
+        }
+        .instagram img {
+            width: 70px;
+            height: 70px;
+        }
+        .instagram p {
+            font-size: 25px;
+            font-weight: 100;
+        }
+        .mail img {
+            width: 70px;
+            height: 70px;
+        }
+        .mail p {
+            font-size: 25px;
+            font-weight: 100;
+        }
+    }
+
+
+
+
 
 
