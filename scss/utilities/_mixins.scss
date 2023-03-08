@@ -1,0 +1,50 @@
+@mixin flex($display, $wrap, $justify,){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin flex($display, $row, $justify){
+    display: $display;
+    flex-direction: $row;
+    justify-content: $justify;
+}
+@mixin grid($grid, $col, $rows,){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $rows;
+}
+@mixin flex($display, $wrap, $col,){
+    display: $display;
+    flex-wrap: $wrap;
+    flex-direction: $col;
+}
+@mixin flex($display, $wrap, $justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin flex($display, $wrap, $justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin flex($display, $wrap, $col){
+    display: $display;
+    flex-wrap: $wrap;
+    flex-direction: $col;
+}
+@mixin a($color, $text, $pad){
+    color: $color;
+    text-decoration: $text;
+    padding: $pad;
+}
+@mixin flex($display, $wrap, $justify){
+    display: $display;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+@mixin flex($display, $wrap, $col,){
+    display: $display;
+    flex-wrap: $wrap;
+    flex-direction: $col;
+}

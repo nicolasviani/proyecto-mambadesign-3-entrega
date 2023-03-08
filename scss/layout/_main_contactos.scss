@@ -1,0 +1,67 @@
+.contactos{
+    @include flex(flex, wrap, space-evenly);
+    background-color: pink;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.whatsapp{
+    @include flex(flex, wrap, column);
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 3px;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+.facebook{
+    @include flex(flex, wrap, column);
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 3px;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+.instagram{
+    @include flex(flex, wrap, column);
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 3px;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
+.mail{
+    @include flex(flex, wrap, column);
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 3px;
+    }
+    p{
+        font-size: 40px;
+        font-weight: 300;
+    }
+}
