@@ -11,10 +11,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   background-color: #fae987;
   width: 100%;
   padding: 15px;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: space-between;
-  align-items: center; }
+  flex-wrap: wrap;
+  text-decoration: center; }
   .principio img {
     width: 150px;
     height: 130px;
@@ -33,9 +32,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   width: 100%;
   height: auto; }
   .navbar ul {
-    display: flex;
-    flex-wrap: row;
-    flex-direction: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: center;
     padding-bottom: 10px; }
   .navbar li {
     list-style: none; }
@@ -50,39 +49,34 @@ font-family: 'Anton', sans-serif; subtitulos */
 
 .main-primario {
   background-color: #87d5fa;
-  display: grid;
   grid-template-columns: 200px 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  flex-wrap: wrap;
   width: 100%;
   height: 200vh;
   grid-template-areas: "seguinos novedades novedades novedades" "seguinos hombres hombres hombres" "seguinos mujeres mujeres mujeres";
-  flex-wrap: wrap;
   padding: 20px; }
 
 .novedades {
   grid-area: novedades;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  flex-direction: wrap;
+  flex-wrap: lightcoral;
+  text-decoration: column; }
 
 .cards-container {
-  display: flex;
+  flex-direction: space-evenly;
   flex-wrap: wrap;
-  flex-direction: center;
-  justify-content: space-evenly;
-  padding-bottom: 10px; }
+  text-decoration: 10px; }
 
 .cards-container-title h2 {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: center;
-  font-size: 55px; }
+  flex-wrap: wrap;
+  text-decoration: 55px; }
 
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: center;
-  flex-direction: column; }
+  flex-wrap: wrap;
+  text-decoration: column; }
   .card-container img {
     width: 220px;
     height: 210px;
@@ -113,10 +107,9 @@ font-family: 'Anton', sans-serif; subtitulos */
     height: 40px; }
 
 .pie {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: space-evenly;
-  background-color: coral;
+  flex-wrap: wrap;
+  text-decoration: coral;
   gap: 30px;
   padding: 10px; }
 
@@ -136,9 +129,8 @@ font-family: 'Anton', sans-serif; subtitulos */
     font-family: 'Roboto', sans-serif; }
 
 .redes {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
   text-decoration: none; }
   .redes h2 {
     padding: 5px; }
@@ -148,9 +140,9 @@ font-family: 'Anton', sans-serif; subtitulos */
     padding: 5px; }
 
 .pago {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column; }
   .pago h2 {
     padding: 5px; }
   .pago a {
@@ -159,9 +151,9 @@ font-family: 'Anton', sans-serif; subtitulos */
     padding: 5px; }
 
 .login-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: center;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: center;
   background-color: pink;
   padding: 10px; }
 
@@ -184,9 +176,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   padding-bottom: 10px; }
 
 .form-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center; }
 
 .input-container {
@@ -194,9 +186,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   padding-bottom: 10px; }
 
 .buttom-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center;
   padding-top: 10px; }
 
@@ -206,9 +198,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   border-radius: 5px; }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: grid;
+  grid-template-rows: repeat(4, 1fr);
+  flex-wrap: repeat(6, 1fr);
   width: 100%;
   height: 100vh;
   grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer";
@@ -227,9 +219,9 @@ footer {
   grid-area: footer; }
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: grid;
+  grid-template-rows: repeat(4, 1fr);
+  flex-wrap: repeat(6, 1fr);
   width: 100%;
   height: 100vh;
   grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer";
@@ -248,18 +240,18 @@ footer {
   grid-area: footer; }
 
 .contactos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: space-evenly;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: space-evenly;
   background-color: pink;
   flex-direction: row;
   align-items: center;
   gap: 20px; }
 
 .whatsapp {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center;
   border-radius: 5px;
   padding: 10px; }
@@ -272,9 +264,9 @@ footer {
     font-weight: 300; }
 
 .facebook {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center;
   border-radius: 5px;
   padding: 10px; }
@@ -287,9 +279,9 @@ footer {
     font-weight: 300; }
 
 .instagram {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center;
   border-radius: 5px;
   padding: 10px; }
@@ -302,9 +294,9 @@ footer {
     font-weight: 300; }
 
 .mail {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: wrap;
+  flex-wrap: flex;
+  text-decoration: column;
   align-items: center;
   border-radius: 5px;
   padding: 10px; }

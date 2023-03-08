@@ -2,8 +2,7 @@
     background-color: rgb(250, 233, 135);
     width: 100%;
     padding: 15px;
-    @include flex(flex, wrap, space-between);
-    align-items: center;
+    @include flex(wrap, space-between, center);
     img{
         width:150px;
         height: 130px;
@@ -25,7 +24,7 @@
     width: 100%;
     height: auto;
     ul{
-        @include flex(flex, row, center);
+        @include flex(wrap, row, center);
         padding-bottom: 10px;
     }
     li{

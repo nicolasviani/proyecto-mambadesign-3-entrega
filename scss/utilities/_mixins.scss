@@ -1,36 +1,36 @@
-@mixin flex($display, $wrap, $justify,){
-    display: $display;
+@mixin flex($wrap, $justify, $aling){
     flex-wrap: $wrap;
     justify-content: $justify;
+    align-items: $aling;
 }
-@mixin flex($display, $row, $justify){
-    display: $display;
+@mixin flex($wrap, $row, $justify){
+    flex-wrap: $wrap;
     flex-direction: $row;
     justify-content: $justify;
 }
-@mixin grid($grid, $col, $rows,){
-    display: grid;
-    grid-template-columns: $col;
+@mixin grid($cols, $rows, $wrap){
+    grid-template-columns: $cols;
     grid-template-rows: $rows;
+    flex-wrap: $wrap;
 }
-@mixin flex($display, $wrap, $col,){
-    display: $display;
+@mixin flex($bg, $wrap, $col){
+    background-color: $bg;
     flex-wrap: $wrap;
     flex-direction: $col;
 }
-@mixin flex($display, $wrap, $justify){
-    display: $display;
+@mixin flex($wrap, $justify, $padd){
     flex-wrap: $wrap;
     justify-content: $justify;
+    padding-bottom: $padd;
 }
-@mixin flex($display, $wrap, $justify){
-    display: $display;
+@mixin flex($wrap, $justify,$font-s){
     flex-wrap: $wrap;
     justify-content: $justify;
+    font-size: $font-s;
 }
-@mixin flex($display, $wrap, $col){
-    display: $display;
+@mixin flex($wrap, $justify, $col){
     flex-wrap: $wrap;
+    justify-content: $justify;
     flex-direction: $col;
 }
 @mixin a($color, $text, $pad){
@@ -38,13 +38,13 @@
     text-decoration: $text;
     padding: $pad;
 }
-@mixin flex($display, $wrap, $justify){
-    display: $display;
+@mixin flex($wrap, $justify, $bg){
     flex-wrap: $wrap;
     justify-content: $justify;
+    background-color: $bg;
 }
-@mixin flex($display, $wrap, $col,){
-    display: $display;
+@mixin flex($wrap, $flex-direction, $text-deco){
+    flex-direction: $flex-direction;
     flex-wrap: $wrap;
-    flex-direction: $col;
+    text-decoration: $text-deco;
 }

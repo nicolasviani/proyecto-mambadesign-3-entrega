@@ -1,11 +1,12 @@
 .pie{
-    @include flex(flex, wrap, space-evenly);
-    background-color: coral;
+    @include flex(wrap, space-evenly, coral);
     gap: 30px;
     padding: 10px;
 }
 .nosotros{
-    @include flex(flex, wrap, column);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     h2{
         padding: 5px;
     }
@@ -21,8 +22,7 @@
     }
 }
 .redes{
-    @include flex(flex, wrap, column);
-    text-decoration: none;
+    @include flex(wrap, column, none);
     h2{
         padding: 5px;
     }
