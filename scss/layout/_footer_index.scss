@@ -31,7 +31,9 @@
     }
 }
 .pago{
-    @include flex(flex, wrap, column);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     h2{
         padding: 5px;
     }
