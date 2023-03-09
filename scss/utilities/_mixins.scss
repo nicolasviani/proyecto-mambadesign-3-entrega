@@ -1,5 +1,40 @@
+// // header/index
+
 @mixin flex($wrap, $justify, $align){
     flex-wrap: $wrap;
     justify-content: $justify;
     align-items: $align;
+}
+@mixin flex($wrap, $flex-d, $justify){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    justify-content: $justify;
+}
+
+// main/index
+
+@mixin grid($col, $rows, $wrap){
+    grid-template-columns: $col;
+    grid-template-rows: $rows;
+    flex-wrap: $wrap;
+}
+@mixin flex($bg, $wrap, $flex-d){
+    background-color: $bg;
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+}
+@mixin flex($wrap, $justify, $padd-b){
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    padding-bottom: $padd-b;
+}
+@mixin flex($wrap, $justify, $font-s){
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    font-size: $font-s;
+}
+@mixin flex($wrap, $justify, $flex-d){
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    flex-direction: $flex-d;
 }
