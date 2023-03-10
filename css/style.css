@@ -10,9 +10,9 @@ font-family: 'Anton', sans-serif; subtitulos */
 .principio {
   background-color: #fae987;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: center;
+  flex-direction: wrap;
+  align-items: space-between;
+  background-color: center;
   padding: 15px; }
   .principio img {
     width: 150px;
@@ -32,9 +32,9 @@ font-family: 'Anton', sans-serif; subtitulos */
   width: 100%;
   height: auto; }
   .navbar ul {
-    flex-wrap: wrap;
-    justify-content: row;
-    flex-direction: center;
+    flex-direction: wrap;
+    align-items: row;
+    background-color: center;
     gap: 10px;
     padding-bottom: 10px; }
   .navbar li {
@@ -52,36 +52,33 @@ font-family: 'Anton', sans-serif; subtitulos */
   background-color: #87d5fa;
   grid-template-columns: 200px 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  flex-wrap: wrap;
+  background-color: wrap;
   width: 100%;
   height: 200vh;
-  grid-template-areas:  
-  "seguinos novedades novedades novedades"
-  "seguinos hombres hombres hombres"
-  "seguinos mujeres mujeres mujeres";
+  grid-template-areas: "seguinos novedades novedades novedades" "seguinos hombres hombres hombres" "seguinos mujeres mujeres mujeres";
   gap: 30px 30px;
   padding: 20px; }
 
 .novedades {
   grid-area: novedades;
-  flex-wrap: lightcoral;
-  justify-content: wrap;
-  flex-direction: column; }
+  flex-direction: lightcoral;
+  align-items: wrap;
+  background-color: column; }
 
 .cards-container {
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  flex-direction: 10px; }
+  flex-direction: wrap;
+  align-items: space-evenly;
+  background-color: 10px; }
 
 .cards-container-title h2 {
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: 55px; }
+  flex-direction: wrap;
+  align-items: center;
+  background-color: 55px; }
 
 .card-container {
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column; }
+  flex-direction: wrap;
+  align-items: center;
+  background-color: column; }
   .card-container img {
     width: 220px;
     height: 210px;
@@ -110,3 +107,263 @@ font-family: 'Anton', sans-serif; subtitulos */
   .seguinos img {
     width: 40px;
     height: 40px; }
+
+.pie {
+  flex-direction: wrap;
+  align-items: space-evenly;
+  background-color: coral;
+  gap: 30px;
+  padding: 10px; }
+
+.nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .nosotros h2 {
+    padding: 5px; }
+  .nosotros h3 {
+    text-align: center; }
+  .nosotros h4 {
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif; }
+
+.redes {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: none; }
+  .redes h2 {
+    padding: 5px; }
+  .redes a {
+    color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    padding: 5px; }
+
+.pago {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  .pago h2 {
+    padding: 5px; }
+  .pago a {
+    color: rgba(255, 255, 255, 0.479);
+    text-decoration: none;
+    padding: 5px; }
+
+.login-container {
+  background-color: pink;
+  flex-direction: wrap;
+  align-items: center;
+  background-color: 10px; }
+
+.login-title-container {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  align-items: center; }
+
+.login-title {
+  font-size: 70px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-bottom: 10px; }
+
+.login-subtitle {
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 10px; }
+
+.form-container {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center; }
+
+.input-container {
+  font-size: 30px;
+  padding-bottom: 10px; }
+
+.bottom-container {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center;
+  padding-top: 10px; }
+
+.bottom {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px; }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat 4, 1fr;
+  grid-template-rows: repeat 6, 1fr;
+  background-color: wrap;
+  grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
+
+header {
+  background-color: #fae987;
+  grid-area: header; }
+
+main {
+  background-color: white;
+  grid-area: main; }
+
+footer {
+  background-color: coral;
+  grid-area: footer; }
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat 4, 1fr;
+  grid-template-rows: repeat 6, 1fr;
+  background-color: wrap;
+  grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
+
+header {
+  background-color: #fae987;
+  grid-area: header; }
+
+main {
+  background-color: white;
+  grid-area: main; }
+
+footer {
+  background-color: coral;
+  grid-area: footer; }
+
+.contactos {
+  background-color: pink;
+  flex-direction: wrap;
+  align-items: row;
+  background-color: space-evenly;
+  align-items: center;
+  gap: 20px; }
+
+.whatsapp {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center;
+  border-radius: 5px;
+  padding: 10px; }
+  .whatsapp img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px; }
+  .whatsapp p {
+    font-size: 40px;
+    font-weight: 300; }
+
+.facebook {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center;
+  border-radius: 5px;
+  padding: 10px; }
+  .facebook img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px; }
+  .facebook p {
+    font-size: 40px;
+    font-weight: 300; }
+
+.instragram {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center;
+  border-radius: 5px;
+  padding: 10px; }
+  .instragram img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px; }
+  .instragram p {
+    font-size: 40px;
+    font-weight: 300; }
+
+.mail {
+  flex-direction: wrap;
+  align-items: column;
+  background-color: center;
+  border-radius: 5px;
+  padding: 10px; }
+  .mail img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px; }
+  .mail p {
+    font-size: 40px;
+    font-weight: 300; }
+
+@media (max-width: 768px) {
+  .principio {
+    flex-direction: column;
+    align-items: start;
+    background-color: blue;
+    width: auto; }
+    .principio img {
+      width: 100px;
+      height: 90px; }
+    .principio h1 {
+      font-size: 30px;
+      color: white; }
+    .principio p {
+      color: white;
+      font-size: 18px; }
+  .navbar {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start; }
+    .navbar li a {
+      color: white;
+      font-size: 15px;
+      padding: 8px; }
+  .main-primario {
+    grid-template-columns: repeat 2, auto;
+    grid-template-rows: repeat(5, auto);
+    background-color: black;
+    width: auto;
+    height: auto;
+    grid-template-areas: "seguinos novedades" "seguinos novedades" "seguinos hombres" "seguinos hombres" "mujeres mujeres"; }
+  .cards-container-title h2 {
+    font-size: 35px; }
+  .cards-container img {
+    width: 150px;
+    height: 130px; }
+  .pie {
+    width: 100%;
+    height: auto;
+    background-color: coral; }
+  .card-container {
+    justify-items: flex-start; }
+  .seguinos {
+    font-size: 20px; } }
+
+@media (max-width: 375px) {
+  .principio {
+    width: auto;
+    background-color: #9900ff; }
+  main-primario {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    background-color: black;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "seguinos" "novedades" "hombres" "mujeres"; } }
+
+@media (max-width: 320px) {
+  .principio {
+    width: auto;
+    background-color: #9900ff; }
+  main-primario {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    background-color: black;
+    width: 100%;
+    height: auto;
+    grid-template-areas: "seguinos" "novedades" "hombres" "mujeres"; } }
