@@ -27,18 +27,19 @@
         @include flex(wrap, row, center);
         gap: 10px;
         padding-bottom: 10px;
-    }
-    li{
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-        color: black;
-        font-size: 25px;
-        padding: 10px;
-    }
-    a:hover{
-        background-color:rgb(250, 143, 135) ;
-        border-radius: 15%;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                padding: 10px;
+                &:hover{
+                    background-color:black;
+                    color: white;
+                    border-radius: 5px;
+                }
+            }   
+        }
     }
 }

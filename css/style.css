@@ -37,22 +37,23 @@ font-family: 'Anton', sans-serif; subtitulos */
     background-color: center;
     gap: 10px;
     padding-bottom: 10px; }
-  .navbar li {
-    list-style: none; }
-  .navbar a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    padding: 10px; }
-  .navbar a:hover {
-    background-color: #fa8f87;
-    border-radius: 15%; }
+    .navbar ul li {
+      list-style: none; }
+      .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        padding: 10px; }
+        .navbar ul li a:hover {
+          background-color: black;
+          color: white;
+          border-radius: 5px; }
 
 .main-primario {
   background-color: #87d5fa;
   grid-template-columns: 200px 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: wrap;
+  width: wrap;
   width: 100%;
   height: 200vh;
   grid-template-areas: "seguinos novedades novedades novedades" "seguinos hombres hombres hombres" "seguinos mujeres mujeres mujeres";
@@ -201,7 +202,7 @@ font-family: 'Anton', sans-serif; subtitulos */
   height: 100vh;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: repeat 6, 1fr;
-  background-color: wrap;
+  width: wrap;
   grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
 
 header {
@@ -221,7 +222,7 @@ footer {
   height: 100vh;
   grid-template-columns: repeat 4, 1fr;
   grid-template-rows: repeat 6, 1fr;
-  background-color: wrap;
+  width: wrap;
   grid-template-areas: "header header header header" "main main main main"  "main main main main" "main main main main" "main main main main" "footer footer footer footer"; }
 
 header {
@@ -326,7 +327,7 @@ footer {
   .main-primario {
     grid-template-columns: repeat 2, auto;
     grid-template-rows: repeat(5, auto);
-    background-color: black;
+    width: black;
     width: auto;
     height: auto;
     grid-template-areas: "seguinos novedades" "seguinos novedades" "seguinos hombres" "seguinos hombres" "mujeres mujeres"; }
@@ -348,10 +349,10 @@ footer {
   .principio {
     width: auto;
     background-color: #9900ff; }
-  main-primario {
+  .main-primario {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
-    background-color: black;
+    width: black;
     width: 100%;
     height: auto;
     grid-template-areas: "seguinos" "novedades" "hombres" "mujeres"; } }
@@ -363,7 +364,157 @@ footer {
   main-primario {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
-    background-color: black;
+    width: black;
     width: 100%;
     height: auto;
     grid-template-areas: "seguinos" "novedades" "hombres" "mujeres"; } }
+
+@media (max-width: 768px) {
+  .principio {
+    flex-direction: column;
+    align-items: start;
+    background-color: blue;
+    width: auto; }
+    .principio img {
+      width: 100px;
+      height: 90px; }
+    .principio h1 {
+      font-size: 30px;
+      color: white; }
+    .principio p {
+      color: white;
+      font-size: 18px; }
+  .navbar {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start; }
+    .navbar li a {
+      color: white;
+      font-size: 15px;
+      padding: 8px; }
+  .login-container {
+    display: flex;
+    background-color: lightcoral; }
+  .login-title {
+    font-size: 40px; }
+  .login-subtitle {
+    font-size: 20px; }
+  .input-container {
+    font-size: 20px; }
+  .buttom {
+    background-color: lightgreen; }
+  .pie {
+    width: 100%;
+    height: auto;
+    background-color: coral; }
+  .card-container {
+    justify-items: flex-start; }
+  .seguinos {
+    font-size: 20px; } }
+
+@media (max-width: 768px) {
+  .principio {
+    flex-direction: column;
+    align-items: start;
+    background-color: blue;
+    width: auto; }
+    .principio img {
+      width: 100px;
+      height: 90px; }
+    .principio h1 {
+      font-size: 30px;
+      color: white; }
+    .principio p {
+      color: white;
+      font-size: 18px; }
+  .navbar {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start; }
+    .navbar li a {
+      color: white;
+      font-size: 15px;
+      padding: 8px; }
+  .hero {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    width: 100%;
+    height: auto;
+    grid-template-areas: "header header" "main main" "main main" "main main" "main main" "footer footer"; }
+  header {
+    grid-area: header;
+    background-color: lightblue; }
+  main {
+    grid-area: main;
+    background-color: white; }
+  footer {
+    grid-area: footer;
+    background-color: lightcoral; } }
+
+@media (max-width: 768px) {
+  .principio {
+    flex-direction: column;
+    align-items: start;
+    background-color: blue;
+    width: auto; }
+    .principio img {
+      width: 100px;
+      height: 90px; }
+    .principio h1 {
+      font-size: 30px;
+      color: white; }
+    .principio p {
+      color: white;
+      font-size: 18px; }
+  .navbar {
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start; }
+    .navbar li a {
+      color: white;
+      font-size: 15px;
+      padding: 8px; }
+  .hero {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    width: 100%;
+    height: auto;
+    grid-template-areas: "header header" "main main" "main main" "main main" "main main" "footer footer"; }
+  header {
+    grid-area: header;
+    background-color: lightblue; }
+  main {
+    grid-area: main;
+    background-color: white; }
+  footer {
+    grid-area: footer;
+    background-color: lightcoral; } }
+
+@media (max-width: 768px) {
+  .contactos {
+    background-color: lightpink;
+    justify-content: center; }
+  .whatsapp img {
+    width: 70px;
+    height: 70px; }
+    .whatsapp img p {
+      font-size: 25px;
+      font-weight: 100; }
+  .facebook img {
+    width: 70px;
+    height: 70px; }
+    .facebook img p {
+      font-size: 25px;
+      font-weight: 100; }
+  .instagram img {
+    width: 70px;
+    height: 70px; }
+    .instagram img p {
+      font-size: 25px;
+      font-weight: 100; }
+  .mail img {
+    width: 70px;
+    height: 70px; }
+    .mail img p {
+      font-size: 25px;
+      font-weight: 100; } }

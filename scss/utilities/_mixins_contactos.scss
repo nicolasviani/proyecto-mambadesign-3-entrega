@@ -1,0 +1,27 @@
+// contactos/index
+
+@mixin flex($wrap, $flex-d, $justify){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    justify-content: $justify;
+}
+@mixin flex($wrap, $flex-d, $align){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    align-items: $align;
+}
+@mixin flex($wrap, $flex-d, $align){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    align-items: $align;
+}
+@mixin flex($wrap, $flex-d, $align){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    align-items: $align;
+}
+@mixin flex($wrap, $flex-d, $align){
+    flex-wrap: $wrap;
+    flex-direction: $flex-d;
+    align-items: $align;
+}

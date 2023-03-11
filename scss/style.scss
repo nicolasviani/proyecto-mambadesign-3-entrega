@@ -1,5 +1,16 @@
-@import "./utilities/variables";
+
 @import "./utilities/mixins";
+@import "./utilities/mixins_main_index";
+@import "./utilities/mixins_footer_index";
+@import "./utilities/mixins_hombres";
+@import "./utilities/mixins_mujeres";
+@import "./utilities/mixins_contactos";
+@import "./utilities/mixins_media_768_index";
+@import "./utilities/mixins_media_375_index";
+@import "./utilities/mixins_media_320_index";
+@import "./utilities/mixins_media_768_login";
+@import "./utilities/mixins_media_768_hombres";
+@import "./utilities/mixins_media_768_mujeres";
 @import "./base/typo";
 @import "./base/reset";
 @import "./layout/header_index";
@@ -14,3 +25,20 @@
 @import "./layout/media_425_index";
 @import "./layout/media_375_index";
 @import "./layout/media_320_index";
+@import "./layout/media_768_login";
+@import "./layout/media_425_login";
+@import "./layout/media_375_login";
+@import "./layout/media_320_login";
+@import "./layout/media_768_hombres";
+@import "./layout/media_425_hombres";
+@import "./layout/media_375_hombres";
+@import "./layout/media_320_hombres";
+@import "./layout/media_768_mujeres";
+@import "./layout/media_425_mujeres";
+@import "./layout/media_375_mujeres";
+@import "./layout/media_320_mujeres";
+@import "./layout/media_768_contactos";
+@import "./layout/media_425_contactos";
+@import "./layout/media_375_contactos";
+@import "./layout/media_320_contactos";
+
