@@ -1,11 +1,11 @@
-.contactos{
-    background-color: pink;
-    @include flex(wrap, row, space-evenly);
-    align-items: center;
+/* contactos */
+.contactos {
+    @include flex-primario(flex, row, none, wrap, space-evenly, center);
+    background-color: $color-rosa;
     gap: 20px;
 }
 .whatsapp{
-    @include flex(wrap, column, center);
+    @include flex-primario(flex, column, center, wrap, none, none);
     border-radius: 5px;
     padding: 10px;
     img{
@@ -19,7 +19,7 @@
     }
 }
 .facebook{
-    @include flex(wrap, column, center);
+    @include flex-primario(flex, column, center, wrap, none, none);
     border-radius: 5px;
     padding: 10px;
     img{
@@ -32,8 +32,8 @@
         font-weight: 300;
     }
 }
-.instragram{
-    @include flex(wrap, column, center);
+.instagram{
+    @include flex-primario(flex, column, center, wrap, none, none);
     border-radius: 5px;
     padding: 10px;
     img{
@@ -47,7 +47,7 @@
     }
 }
 .mail{
-    @include flex(wrap, column, center);
+    @include flex-primario(flex, column, center, wrap, none, none);
     border-radius: 5px;
     padding: 10px;
     img{
@@ -60,3 +60,6 @@
         font-weight: 300;
     }
 }
+
+
+

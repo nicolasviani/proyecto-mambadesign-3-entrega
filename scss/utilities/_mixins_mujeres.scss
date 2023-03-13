@@ -1,6 +1,0 @@
-// mujeres/main
-@mixin grid($col, $rows, $wrap){
-    grid-template-columns: $col;
-    grid-template-rows: $rows;
-    flex-wrap: $wrap;
-}

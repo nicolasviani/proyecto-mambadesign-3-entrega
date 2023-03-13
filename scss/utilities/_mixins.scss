@@ -1,34 +1,15 @@
-// // header/index
-
-@mixin flex($wrap, $justify, $align){
-    flex-wrap: $wrap;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flex-primario ($display, $flex-direction, $align-items, $flex-wrap, $justify-content, $align-content) {
+    display: $display; ;
+    flex-direction: $flex-direction ;
+    align-items: $align-items;
+    flex-wrap:$flex-wrap; 
+    justify-content: $justify-content; 
+    align-content: $align-content; 
 }
-@mixin flex($wrap, $flex-d, $justify){
-    flex-wrap: $wrap;
-    flex-direction: $flex-d;
-    justify-content: $justify;
+//este mixin se usa en el archivo _HombresMujeres.scss
+@mixin grid-primario ($display, $grid-template-columns, $grid-template-rows, $grid-template-areas) {
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+    grid-template-areas: $grid-template-areas;  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

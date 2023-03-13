@@ -1,6 +1,0 @@
-// media/320/index
-@mixin grid($col, $rows, $bg){
-    grid-template-columns: $col;
-    grid-template-rows: $rows;
-    background-color: $bg;
-}

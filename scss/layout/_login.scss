@@ -1,0 +1,41 @@
+.login-container {
+    @include flex-primario(flex, none, none, wrap, center, none);
+    background-color: $color-rosa;
+    padding: 10px;
+} 
+.login-title-container {
+    background-color: $color-rojo-oscuro;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;   
+    align-items: center;
+}
+.login-title {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login-subtitle {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+} 
+.form-container {
+    @include flex-primario(flex, column, center, wrap, none, none);
+}
+.input-container {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.buttom-container {
+    @include flex-primario(flex, column, center, wrap, none, none);
+    padding-top: 10px;
+}
+.buttom {
+    background-color: $color-verde-claro;
+    padding: 10px;
+    border-radius: 5px;
+}
+

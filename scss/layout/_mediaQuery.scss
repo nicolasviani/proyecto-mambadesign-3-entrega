@@ -1,0 +1,708 @@
+/* MEDIA QUERIES INDEX.HTML */
+@media (max-width:768px) {
+    .principio {
+        @include flex-primario(flex, column, start, none, none, none);
+        background-color: $color-azul-oscuro;
+        img {
+            width: 100px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 30px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 18px;
+        }
+    } 
+    .navbar{
+        background-color: $color-azul-oscuro;
+        display: flex;
+        justify-content: flex-start;
+        a{
+            color: $color-blanco;
+            font-size: 15px;
+            padding: 8px;
+        }
+    } 
+    .main-primario {
+        @include grid-primario(grid, repeat(2,auto), repeat(5,auto), "seguinos novedades" "seguinos novedades" "seguinos hombres" "seguinos hombres" "mujeres mujeres");
+        background-color: $color-negro;
+        width: auto;
+        height: auto;
+    }
+    .cards-container-title h2 {
+        font-size: 35px;
+    }
+    .cards-container img {
+        width: 150px;
+        height: 130px;
+    }
+    .pie {
+        width: 100%;
+        height: auto;
+        background-color: $color-coral;
+    }
+    .card-container{
+        justify-items: flex-start;
+    }
+    .seguinos {
+        font-size: 20px;
+    }
+}
+@media (max-width: 425px){
+    .principio {
+        @include flex-primario(flex, column, start, none, none, none);
+        background-color: $color-rojo-claro;
+        img {
+            width: 90px;
+            height: 80px;
+        }
+        h1 {
+            font-size: 27px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 16px;
+        }
+    } 
+    .navbar{
+        background-color: $color-rojo-claro;
+        display: flex;
+        justify-content: flex-start;
+        a{
+            color: $color-blanco;
+            font-size: 13px;
+            padding: 6px;
+        }
+    } 
+    .main-primario {
+        @include grid-primario(grid, repeat(2,auto), repeat(5,auto), "seguinos novedades" "seguinos novedades" "seguinos hombres" "seguinos hombres" "mujeres mujeres");
+        background-color: $color-blanco;
+        width: auto;
+        height: auto;
+    }
+    .cards-container-title h2 {
+        font-size: 32px;
+    }
+    .cards-container img {
+        width: 130px;
+        height: 110px;
+    }
+    .pie {
+        width: 100%;
+        height: auto;
+        background-color: $color-gris;
+    }
+    .card-container{
+        justify-items: flex-start;
+    }
+    .seguinos {
+        font-size: 18px;
+    }
+}
+@media (max-width:375px){
+        .principio{
+            width: auto;
+            background-color: $color-violeta;
+        }
+        .main-primario {
+            background-color: $color-blanco;
+            @include grid-primario(grid, repeat(1,1fr), repeat(4, auto), "seguinos" "novedades" "hombres" "mujeres");
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width:320px){
+        .principio{
+            width: auto;
+            background-color: $color-violeta;
+        }
+        .main-primario {
+            background-color: $color-blanco;
+            @include grid-primario(grid, repeat(1,1fr), repeat(1, auto), "seguinos" "novedades" "hombres" "mujeres");
+            width: 100%;
+            height: auto;
+        }
+    }
+    //fin MQ de index.html
+     /* MEDIA QUERIES DE LOGIN.HTML */
+    @media (max-width:768px){
+        .principio {
+            background-color: $color-azul-oscuro;
+            width: auto;
+            @include flex-primario(flex, column, start, none, none, none);
+            img{
+                width: 100px;
+                height: 90px;
+            }
+            h1{
+                font-size: 30px;
+                color: $color-blanco;
+            }
+            p{
+                color: $color-blanco;
+                font-size: 18px;
+            }
+        }
+        .navbar {
+            background-color: $color-azul-oscuro;
+            display: flex;
+            justify-content: flex-start;
+            a{
+                color: $color-blanco;
+                font-size: 15px;
+                padding: 8px;
+            }
+        }
+        .login-container {
+            display: flex;
+            background-color: $color-rosa;
+        }
+        .login-title {
+            font-size: 40px;
+        }
+        .login-subtitle {
+            font-size: 20px;
+        }
+        .input-container {
+            font-size: 20px;
+        }
+        .buttom {
+        background-color: $color-verde-claro;
+        }
+        .pie {
+            width: 100%;
+            height: auto;
+            background-color: $color-coral;
+        }
+        .card-container{
+            justify-items: flex-start;
+        }
+        .seguinos {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 425px){
+        .principio {
+            background-color: $color-rojo-claro;
+            width: auto;
+            @include flex-primario(flex, column, start, none, none, none);
+            img{
+                width: 80px;
+                height: 70px;
+            }
+            h1{
+                font-size: 27px;
+                color: $color-blanco;
+            }
+            p{
+                color: $color-blanco;
+                font-size: 15px;
+            }
+        }
+        .navbar {
+            background-color: $color-rojo-claro;
+            display: flex;
+            justify-content: flex-start;
+            a{
+                color: $color-blanco;
+                font-size: 12px;
+                padding: 6px;
+            }
+        }
+        .login-container {
+            display: flex;
+            background-color: $color-blanco;
+        }
+        .login-title {
+            font-size: 36px;
+        }
+        .login-subtitle {
+            font-size: 16px;
+        }
+        .input-container {
+            font-size: 16px;
+        }
+        .buttom {
+        background-color: $color-verde-claro;
+        }
+        .pie {
+            width: 100%;
+            height: auto;
+            background-color: $color-coral;
+        }
+        .card-container{
+            justify-items: flex-start;
+        }
+        .seguinos {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 375px){
+        .principio {
+            background-color: $color-violeta;
+            width: auto;
+            @include flex-primario(flex, column, start, none, none, none);
+            img{
+                width: 70px;
+                height: 60px;
+            }
+            h1{
+                font-size: 25px;
+                color: $color-blanco;
+            }
+            p{
+                color: $color-blanco;
+                font-size: 13px;
+            }
+        }
+        .navbar {
+            background-color: $color-rojo-claro;
+            display: flex;
+            justify-content: flex-start;
+            a{
+                color: $color-blanco;
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+        .login-container {
+            display: flex;
+            background-color: $color-blanco;
+        }
+        .login-title {
+            font-size: 34px;
+        }
+        .login-subtitle {
+            font-size: 14px;
+        }
+        .input-container {
+            font-size: 14px;
+        }
+        .buttom {
+        background-color: $color-verde-claro;
+        }
+        .pie {
+            width: 100%;
+            height: auto;
+            background-color: $color-rojo;
+        }
+        .card-container{
+            justify-items: flex-start;
+        }
+        .seguinos {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 320px){
+        .principio {
+            background-color: $color-violeta;
+            width: auto;
+            @include flex-primario(flex, column, start, none, none, none);
+            img{
+                width: 70px;
+                height: 60px;
+            }
+            h1{
+                font-size: 25px;
+                color: $color-blanco;
+            }
+            p{
+                color: $color-blanco;
+                font-size: 13px;
+            }
+        }
+        .navbar {
+            background-color: $color-rojo-claro;
+            display: flex;
+            justify-content: flex-start;
+            a{
+                color: $color-blanco;
+                font-size: 10px;
+                padding: 5px;
+            }
+        }
+        .login-container {
+            display: flex;
+            background-color: $color-blanco;
+        }
+        .login-title {
+            font-size: 34px;
+        }
+        .login-subtitle {
+            font-size: 14px;
+        }
+        .input-container {
+            font-size: 14px;
+        }
+        .buttom {
+        background-color: $color-verde-claro;
+        }
+        .pie {
+            width: 100%;
+            height: auto;
+            background-color: $color-rojo;
+        }
+        .card-container{
+            justify-items: flex-start;
+        }
+        .seguinos {
+            font-size: 14px;
+        }
+    }
+//fin mD de login.html
+ /* MEDIA QUERIES DE HOMBRES/MUJERES */
+@media (max-width: 768px) {
+    .principio {
+        background-color: $color-azul-oscuro;
+        width: auto;
+        @include flex-primario(flex, column, start, none, none, none);
+        img {
+            width: 100px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 30px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 18px;
+        }
+    }
+    .navbar {
+        background-color: $color-azul-oscuro;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            color: $color-blanco;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+    .hero {
+        width: 100%;
+        height: auto;
+        @include grid-primario(grid, repeat(2,auto), repeat(6,auto), "header header" "main main" "main main" "main main" "main main" "footer footer");
+    }
+    header {
+        grid-area: header;
+        background-color: $color-azul-oscuro;
+    }
+    main {
+        grid-area: main;
+        background-color: $color-blanco;
+    }
+    footer {
+        grid-area: footer;
+        background-color: $color-coral;
+    }
+} 
+
+@media (max-width: 425px) {
+    .principio {
+        background-color: $color-rojo-claro;
+        width: auto;
+        @include flex-primario(flex, column, start, none, none, none);
+        img {
+            width: 100px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 30px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 18px;
+        }
+    }
+    .navbar {
+        background-color: $color-rojo-claro;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            color: $color-blanco;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+    .hero {
+        width: 100%;
+        height: auto;
+        @include grid-primario(grid, repeat(2,auto), repeat(6,auto), "header header" "main main" "main main" "main main" "main main" "footer footer");
+    }
+    header {
+        grid-area: header;
+        background-color: $color-rojo-claro;
+    }
+    main {
+        grid-area: main;
+        background-color: $color-blanco;
+    }
+    footer {
+        grid-area: footer;
+        background-color: $color-coral;
+    }
+} 
+
+@media (max-width: 375px) {
+    .principio {
+        background-color: $color-violeta;
+        width: auto;
+        @include flex-primario(flex, column, start, none, none, none);
+        img {
+            width: 100px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 30px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 18px;
+        }
+    }
+    .navbar {
+        background-color: $color-violeta;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            color: $color-blanco;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+    .hero {
+        width: 100%;
+        height: auto;
+        @include grid-primario(grid, repeat(1,auto), repeat(4,auto), "header header" "main main" "main main" "footer footer");
+    }
+    header {
+        grid-area: header;
+        background-color: $color-rojo-claro;
+    }
+    main {
+        grid-area: main;
+        background-color: $color-blanco;
+    }
+    footer {
+        grid-area: footer;
+        background-color: $color-violeta;
+    }
+} 
+
+@media (max-width: 320px) {
+    .principio {
+        background-color: $color-violeta;
+        width: auto;
+        @include flex-primario(flex, column, start, none, none, none);
+        img {
+            width: 100px;
+            height: 90px;
+        }
+        h1 {
+            font-size: 30px;
+            color: $color-blanco;
+        }
+        p {
+            color: $color-blanco;
+            font-size: 18px;
+        }
+    }
+    .navbar {
+        background-color: $color-violeta;
+        display: flex;
+        justify-content: flex-start;
+        a {
+            color: $color-blanco;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+    .hero {
+        width: 100%;
+        height: auto;
+        @include grid-primario(grid, repeat(1,fr), repeat(1,auto), "header header" "main main" "footer footer");
+    }
+    header {
+        grid-area: header;
+        background-color: $color-rojo-claro;
+    }
+    main {
+        grid-area: main;
+        background-color: $color-blanco;
+    }
+    footer {
+        grid-area: footer;
+        background-color: $color-violeta;
+    }
+} 
+//fin mD de hombres y mujeres
+
+ /* MEDIA QUERIES CONTACTOS */
+
+@media (max-width: 768px) {
+    .contactos {
+        background-color: $color-rojo;
+        justify-content: center;
+    }
+    .whatsapp img {
+        width: 70px;
+        height: 70px;
+    }
+    .whatsapp p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .facebook img {
+        width: 70px;
+        height: 70px;
+    }
+    .facebook p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .instagram img {
+        width: 70px;
+        height: 70px;
+    }
+    .instagram p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .mail img {
+        width: 70px;
+        height: 70px;
+    }
+    .mail p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 425px) {
+    .contactos {
+        background-color: $color-violeta;
+        justify-content: center;
+    }
+    .whatsapp img {
+        width: 70px;
+        height: 70px;
+    }
+    .whatsapp p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .facebook img {
+        width: 70px;
+        height: 70px;
+    }
+    .facebook p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .instagram img {
+        width: 70px;
+        height: 70px;
+    }
+    .instagram p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .mail img {
+        width: 70px;
+        height: 70px;
+    }
+    .mail p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 375px) {
+    .contactos {
+        background-color: $color-blanco;
+        justify-content: center;
+    }
+    .whatsapp img {
+        width: 70px;
+        height: 70px;
+    }
+    .whatsapp p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .facebook img {
+        width: 70px;
+        height: 70px;
+    }
+    .facebook p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .instagram img {
+        width: 70px;
+        height: 70px;
+    }
+    .instagram p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .mail img {
+        width: 70px;
+        height: 70px;
+    }
+    .mail p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 320px) {
+    .contactos {
+        background-color: $color-blanco;
+        justify-content: center;
+    }
+    .whatsapp img {
+        width: 70px;
+        height: 70px;
+    }
+    .whatsapp p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .facebook img {
+        width: 70px;
+        height: 70px;
+    }
+    .facebook p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .instagram img {
+        width: 70px;
+        height: 70px;
+    }
+    .instagram p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .mail img {
+        width: 70px;
+        height: 70px;
+    }
+    .mail p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+//fin mQ de contactos
