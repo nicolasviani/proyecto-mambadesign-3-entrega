@@ -20,6 +20,9 @@ font-family: 'Anton', sans-serif; subtitulos */
     width: 150px;
     height: 130px;
     border-radius: 15%; }
+    .principio img:hover {
+      transform: scale(1.1, 1.1);
+      transition: transform 100ms 0.2s; }
   .principio h1 {
     font-family: 'Arvo', serif;
     font-size: 70px;
@@ -51,7 +54,7 @@ font-family: 'Anton', sans-serif; subtitulos */
         padding: 10px;
         text-decoration: none; }
         .navbar ul li a.active {
-          text-decoration: underline #80f0a5 6px; }
+          text-decoration: underline #000 6px; }
         .navbar ul li a:hover {
           background-color: #000;
           color: whitesmoke;
@@ -110,12 +113,18 @@ font-family: 'Anton', sans-serif; subtitulos */
     height: 210px;
     border-radius: 15%;
     margin: 10px; }
+    .card-container img:hover {
+      transform: scale(1.1, 1.5);
+      transition: transform 500ms 0.2s; }
   .card-container p {
     text-align: center; }
   .card-container a {
     text-align: center;
     text-decoration: none;
     color: #000; }
+    .card-container a:hover {
+      transform: scale(1.1, 1.5);
+      transition: transform 500ms 0.2s; }
 
 .hombres {
   grid-area: hombres;
@@ -299,7 +308,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-content: none;
-  background-color: #fa8f87;
+  background: linear-gradient(#C25EAC, #FA05C4, #F9F871);
   padding: 10px; }
 
 .login-title-container {

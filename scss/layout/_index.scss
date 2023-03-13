@@ -6,6 +6,10 @@
         width: 150px;
         height: 130px;
         border-radius: 15%;
+        &:hover{
+            transform: scale(1.1,1.1);
+            transition: transform 100ms 0.2s;
+        }
     }
     h1{
         font-family: 'Arvo', serif;
@@ -28,14 +32,14 @@
         gap: 10px;
         padding-bottom: 10px;
         li{
-            list-style: none;          
+            list-style: none; 
             a{                
                 color: black;
                 font-size: 25px;
                 padding: 10px; 
                 text-decoration: none;        
                 &.active{
-                    text-decoration: underline $color-verde-claro 6px;
+                    text-decoration: underline $color-negro 6px;
                 }
                 &:hover{
                     background-color: $color-negro;
@@ -76,6 +80,10 @@
         height: 210px;
         border-radius: 15%;
         margin: 10px;
+        &:hover{
+            transform: scale(1.1,1.5);
+            transition: transform 500ms 0.2s;
+        }
     }
     p {
         text-align: center;
@@ -84,6 +92,10 @@
         text-align: center;
         text-decoration: none;
         color: $color-negro;
+        &:hover{
+            transform: scale(1.1,1.5);
+            transition: transform 500ms 0.2s;
+        }
     }
 }
 .hombres {
